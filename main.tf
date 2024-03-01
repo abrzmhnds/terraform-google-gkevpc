@@ -1,9 +1,4 @@
 # VPC
-import {
-  id = "projects/gcp-shared-host-nonprod/global/networks/shared-host-nonprod"
-  to = google_compute_network.vpc
-}
-
 resource "google_compute_network" "vpc" {
   name                    = var.vpc_name
   project                 = var.project_network
@@ -16,11 +11,7 @@ resource "google_compute_network" "vpc" {
   # }
 }
 
-import {
-  id = "projects/gcp-shared-host-nonprod/regions/asia-southeast2/subnetworks/gcp-rnd-gke-node-devops"
-  to = google_compute_subnetwork.subnet
-}
-
+# Subnet
 resource "google_compute_subnetwork" "subnet" {
   name          = var.subnetwork_name
   region        = var.region_network
