@@ -8,23 +8,23 @@
 # variable "region_network" {}
 
 # GKE
-variable "google_compute_subnetwork" {
-  type = object({
-    ip_cidr_range        = string
-  })
-}
+# variable "google_compute_subnetwork" {
+#   type = object({
+#     ip_cidr_range        = string
+#   })
+# }
 
-variable "project_host" {}
-variable "region_host" {}
+# variable "project_host" {}
+# variable "region_host" {}
 
-variable "secondary_ip_range" {
-  type = object({
-    first_range_name        = string
-    first_ip_cidr_range     = string
-    second_range_name       = string
-    second_ip_cidr_range    = string
-  })
-}
+# variable "secondary_ip_range" {
+#   type = object({
+#     first_range_name        = string
+#     first_ip_cidr_range     = string
+#     second_range_name       = string
+#     second_ip_cidr_range    = string
+#   })
+# }
 
 variable "google_container_cluster" {
   type = object({
