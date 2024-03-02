@@ -1,11 +1,11 @@
 # VPC
-variable "vpc_name" {}
+# variable "vpc_name" {}
 
-variable "project_network" {}
+# variable "project_network" {}
 
-variable "subnetwork_name" {}
+# variable "subnetwork_name" {}
 
-variable "region_network" {}
+# variable "region_network" {}
 
 # GKE
 variable "google_compute_subnetwork" {
