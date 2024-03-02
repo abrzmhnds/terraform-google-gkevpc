@@ -14,8 +14,8 @@
 #   })
 # }
 
-# variable "project_host" {}
-# variable "region_host" {}
+variable "project_host" {}
+variable "region_host" {}
 
 # variable "secondary_ip_range" {
 #   type = object({
